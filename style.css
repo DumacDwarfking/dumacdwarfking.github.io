@@ -1,0 +1,18 @@
+:root {
+  --darkPurple: #261a46;
+  --purple: #674ea7;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--darkPurple);
+  padding: 0% 20%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: var(--purple);
+  display: flex;
+  justify-content: center;
+}
