@@ -11,12 +11,48 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  background-color: var(--purple);
+.buttonContainer {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+
+.fetcher {
+  border-radius: 0;
+  border: transparent;
+  border-radius: 1rem;
+  background-color: var(--purple);
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.fetcher.active {
+  display: none;
+}
+
+.description {
+  text-align: start;
+}
+
+.container {
+  display: none;
   justify-content: center;
   padding: 2rem;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+.container img {
+  display: none;
+}
+
+.container.active {
+  background-color: var(--purple);
+  display: block;
+}
+
+.container.active img {
+  display: block;
 }
 
 #spaceImage {
