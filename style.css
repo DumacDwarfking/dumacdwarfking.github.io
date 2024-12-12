@@ -1,20 +1,62 @@
 :root {
   --darkPurple: #261a46;
-  --purple: #674ea7;
+  --purple: #7c22c9;
   --white: #fff;
+  --black: #000;
+}
+
+html {
+  height: 100%;
 }
 
 body {
   background-color: var(--darkPurple);
-  padding: 0% 20%;
   height: 100%;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+nav {
+  background-color: var(--purple);
+  padding: 1rem;
+  display: flex;
+}
+
+nav h1 {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 0 5rem;
 }
 
 .buttonContainer {
+  margin: 2rem 0rem;
+  display: flex;
+}
+
+.selectorContainer {
   display: flex;
   justify-content: center;
-  margin: 1rem 0rem;
+  width: 50%;
+  align-items: center;
+}
+
+#dateSelector {
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 0px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.fetcherContainer {
+  display: flex;
+  justify-content: center;
+  width: 50%;
 }
 
 .fetcher {
@@ -23,15 +65,37 @@ body {
   border-radius: 1rem;
   background-color: var(--purple);
   cursor: pointer;
-  padding: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  width: 50%;
+  font-weight: 800;
 }
 
-.fetcher.active {
-  display: none;
+.fetcher:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.date {
+  color: var(--black);
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin: 0.5rem 0rem;
 }
 
 .description {
   text-align: start;
+  font-size: 1.1rem;
+}
+
+.copyright {
+  color: var(--black);
 }
 
 .container {
@@ -40,10 +104,16 @@ body {
   padding: 2rem;
   text-align: center;
   margin: 1rem 0rem;
+  border-radius: 14px;
 }
 
 .container img {
   display: none;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .container.active {
@@ -56,5 +126,5 @@ body {
 }
 
 #spaceImage {
-  max-width: 100%;
+  max-width: 80%;
 }

@@ -1,13 +1,21 @@
 var fetcher = document.querySelector(".fetcher");
 var container = document.querySelector(".container");
+var dateSelector = document.getElementById("dateSelector");
+
+var chosenDate = new Date().toISOString().split("T")[0];
 
 //Fetch on button click, display elements:
 fetcher.addEventListener("click", () => {
-  fetcher.classList.toggle("active");
-  container.classList.toggle("active");
+  var selectedDate = dateSelector.value;
+
+  container.classList.add("active");
 
   var APIkey = "K8jf2EtMCnVq9g4aVD01td9nkigsstb4VvBTdV4b";
-  var url = "https://api.nasa.gov/planetary/apod?api_key=" + APIkey;
+  var url =
+    "https://api.nasa.gov/planetary/apod?api_key=" +
+    APIkey +
+    "&date=" +
+    selectedDate;
 
   fetch(url)
     .then(function (response) {
