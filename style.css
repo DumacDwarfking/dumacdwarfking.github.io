@@ -28,6 +28,11 @@ nav h1 {
   padding: 0;
 }
 
+.logo {
+  max-height: 2rem;
+  margin-right: 1rem;
+}
+
 main {
   padding: 0 5rem;
 }
@@ -68,7 +73,7 @@ main {
   padding: 0.5rem;
   font-size: 1rem;
   color: white;
-  width: 50%;
+  width: 52.7%;
   font-weight: 800;
 }
 
@@ -104,7 +109,7 @@ main {
   padding: 2rem;
   text-align: center;
   margin: 1rem 0rem;
-  border-radius: 14px;
+  border-radius: 1rem;
 }
 
 .container img {
@@ -127,4 +132,39 @@ main {
 
 #spaceImage {
   max-width: 80%;
+}
+
+@media (max-width: 760px) {
+  main {
+    padding: 0 2rem;
+  }
+
+  .buttonContainer {
+    display: block;
+  }
+
+  .selectorContainer {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  #dateSelector {
+    font-size: 1.2 rem;
+  }
+
+  .fetcherContainer {
+    width: 100%;
+  }
+
+  .fetcher {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  #spaceImage {
+    max-width: 100%;
+  }
 }
