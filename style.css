@@ -14,5 +14,11 @@ body {
 .container {
   background-color: var(--purple);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  padding: 2rem;
+}
+
+#spaceImage {
+  max-width: 100%;
 }
