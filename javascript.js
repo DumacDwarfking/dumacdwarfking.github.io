@@ -2,8 +2,6 @@ var fetcher = document.querySelector(".fetcher");
 var container = document.querySelector(".container");
 var dateSelector = document.getElementById("dateSelector");
 
-var chosenDate = new Date().toISOString().split("T")[0];
-
 //Fetch on button click, display elements:
 fetcher.addEventListener("click", () => {
   var selectedDate = dateSelector.value;
